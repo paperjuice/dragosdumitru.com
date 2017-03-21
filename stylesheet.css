@@ -1,0 +1,78 @@
+body, html
+{
+	margin:0;
+	padding :0;
+}
+
+.bg_video
+{
+	position: fixed;
+  z-index :1;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	min-width: 50%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+  zoom:1.5;
+}
+
+#bg_colour
+{
+  z-index: 1;
+  position: absolute;
+  background-color: #1e1e1e;
+  height:2000px;
+  left: 0;
+  top: 100%;
+  bottom: 0;
+  right:0;
+  opacity: 0.95;
+}
+
+.top_strip
+{
+  z-index: 2;
+  position: fixed;
+  background-color: #1e1e1e;
+  height: 45px;
+  top:0;
+  left:0;
+  right:0;
+  opacity: 0.8;
+}
+
+.title
+{
+  z-index: 3;
+  color: #dbdbdb;
+
+  font-size: 25px;
+  font-family:cursive;
+  position: fixed;
+  top:10px;
+  left:15px;
+}
+
+.menu
+{
+  position: fixed;
+  z-index: 1;
+  font-size: 15px;
+  font-family: cursive;
+  top:10px;
+
+}
+
+.foa_container
+{
+  z-index: 1;
+  position: absolute;
+  background-color: red;
+  top:100%;
+  left:5%;
+  right:5%;
+  height:200px;
+
+}
