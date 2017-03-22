@@ -6,27 +6,28 @@ body, html
 
 .video_1
 {
+  z-index: 0;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
-
 }
 
 #bg_colour
 {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   background-color: #1e1e1e;
   height:2000px;
   left: 0;
-  top: 100%;
+  top: 0%;
   bottom: 0;
   right:0;
-  opacity: 0.95;
+  opacity: 0.65;
 }
 
 .top_strip
@@ -34,23 +35,43 @@ body, html
   z-index: 2;
   position: fixed;
   background-color: #1e1e1e;
-  height: 45px;
+  height: 70px;
   top:0;
   left:0;
   right:0;
-  opacity: 0.8;
+  opacity: 1;
+  box-shadow: 00px 5px 10px #171717;
 }
 
-.title
+.top_strip img
 {
-  z-index: 3;
-  color: #dbdbdb;
+	position: fixed;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+	right: 10px;
+}
 
-  font-size: 25px;
-  font-family:cursive;
-  position: fixed;
-  top:10px;
-  left:15px;
+.top_strip h
+{
+	z-index: 3;
+    color: #dbdbdb;
+
+    font-size: 30px;
+    font-family: 'IM Fell Double Pica', serif;
+    position: fixed;
+    top:15px;
+    left:15px;
+}
+
+.top_strip div
+{
+	font-size: 20px;
+    font-family: 'IM Fell Double Pica', serif;
+	position: fixed;
+	color: #dbdbdb;
+	top:25px;
+    left:240px;
 }
 
 .menu
@@ -65,12 +86,13 @@ body, html
 
 .foa_container
 {
-  z-index: 1;
-  position: absolute;
-  background-color: red;
-  top:100%;
-  left:5%;
-  right:5%;
-  height:200px;
-
+	position: relative;
+	top: 90%;
+}
+.foa_container img
+{
+	z-index: 1;
+	display: block;
+	margin:0 auto;
+	border:2px solid #dbdbdb;
 }
