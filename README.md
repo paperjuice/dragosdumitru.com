@@ -1,2 +1,0 @@
-# dragosdumitru.com
-dragosdumitru.com
